@@ -4,13 +4,15 @@
 
 %utiliser les environnement \begin{comment} \end{comment} pour mettre en commentaire le préambule une fois la programmation appelée dans le document maître (!ne pas oublier de mettre en commentaire \end{document}!)
 
-\begin{comment}
+%\begin{comment}
 
 \documentclass[a4paper, 11pt, twoside, fleqn]{memoir}
 
-\usepackage{AOCDTF}
+\usepackage{AOCDTF-cnam}
 
-\input{marqueur_chapitre_couleur} %à personnaliser selon le nombre de chapitre dans le cours
+\marqueurchapitre
+\decoupagechapitre{1} %juste pour éviter les erreurs lors de la compilation des sous-programmations (passera en commentaire)
+
 
 %--------------------------------------
 %corps du document
@@ -19,11 +21,17 @@
 \begin{document} %corps du document
 	\openleft %début de chapitre à gauche
 
-\end{comment}
+%\end{comment}
 
-	\chapter{Un troisième chapitre}
-	\ChapFrame %appel du marqueur de chapitre
-	\lipsum[1-7]
+\chapter{Identification}
+\ChapFrame
 
-%\end{document}
+\section{\'Etude préalable}
+
+\section{Dossier de base technique}
+
+\section{Cahier de charge client}
+
+
+\end{document}
 

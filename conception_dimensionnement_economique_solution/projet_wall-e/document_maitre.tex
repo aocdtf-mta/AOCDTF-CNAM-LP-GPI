@@ -6,6 +6,8 @@
 
 \usepackage{AOCDTF-cnam}
 
+\addbibresource{../../bibliographies/management.bib}
+
 %--------------------------------------
 %données du document
 %--------------------------------------
@@ -14,10 +16,10 @@
 \acronymemetier{MTA}
 
 \formation{Licence Profesionnelle Gestion de Production Industrielle}
-\matiere{Conception et dimensionnement technique et économique des solutions}
-\cours{Projet Wall-e}
+\matiere{Conception, dimensionnement technique et économique des solutions}
+\cours{Réalisation d'un projet technique en milieu professionnel}
 
-\auteura{Promo 2020-2021}{}
+\auteura{LP GPI}{Promo 2020-2021}
 \acronymemetierauteura{MTA}
 \auteurb{}{}
 \acronymemetierauteurb{nul}
@@ -58,10 +60,10 @@
 	%--------------------------------------
 	
 	{\hypersetup{linkcolor=black}\tableofcontents*} %table des matières en noir
-	\newpage
-	{\hypersetup{linkcolor=black}\listoftables*} %liste des tableaux en noir
-	\newpage
-	{\hypersetup{linkcolor=black}\listoffigures*} %liste des figures en noir
+	%\newpage
+	%{\hypersetup{linkcolor=black}\listoftables*} %liste des tableaux en noir
+	%\newpage
+	%{\hypersetup{linkcolor=black}\listoffigures*} %liste des figures en noir
 	%{\hypersetup{linkcolor=black}\listtheoremname\listtheorems{formule}} %liste des équations en noir
 	%{\hypersetup{linkcolor=black}\listdefinitionname\listtheorems{definition}} %liste des définitions en noir
 	%{\hypersetup{linkcolor=black}\listexemplename\listtheorems{exemple}} %liste des définitions en noir
@@ -85,6 +87,12 @@
 	%--------------------------------------
 	%inclusion des chapitres
 	%--------------------------------------
+	
+	\part{Projet global}
+	
+	\input{chap_identification}
+
+
 
 
 	%--------------------------------------
@@ -115,7 +123,7 @@
 	%bibliographie
 	%--------------------------------------
 
-	\nocite{AuteurAnnee, Site:abreviation}
+	\nocite{AuteurAnnee, Organisme:Numeronorme-Annee, Site:abreviation}
 	
 	\printbibliography %ajout des références bibliographiques
 		
